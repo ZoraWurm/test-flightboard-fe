@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Room from './Room/room.component';
+import { Room } from './room/room.component';
+import { Header } from './header/header.component';
 
-function App() {
+export function App() {
   const roomList: any[] = [
     { id: 1, isFree: true },
     { id: 2, isFree: true },
@@ -13,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {roomList.map((room) => (
         <Room key={room.id} isFree={room.isFree} />
       ))}
     </div>
   );
 }
-export default App;

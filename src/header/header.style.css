@@ -1,0 +1,27 @@
+.header {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  justify-content: space-around;
+  color: floralwhite;
+  font-size: 20pt;
+  padding: 2%;
+  border-bottom: 1px solid;
+  border-color: dimgray;
+}
+
+.flightboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations {
+  color: floralwhite;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12pt;
+  padding: 1%;
+  padding-left: 13%;
+  border-bottom: 1px solid;
+  border-color: dimgray;
+}
