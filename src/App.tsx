@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './header/header.component';
-import Room from './room/room.component';
+import { Room } from './room/room.component';
 
-function App() {
+export function App() {
   const roomList: any[] = [
     { id: 1, isFree: true },
     { id: 2, isFree: true },
@@ -19,4 +18,3 @@ function App() {
     </div>
   );
 }
-export default App;

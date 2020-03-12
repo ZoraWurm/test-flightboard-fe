@@ -1,11 +1,11 @@
-import React from './node_modules/react';
+import React from 'react';
 import './room.component.css';
 
 type RoomProps = {
   isFree: boolean;
 };
 
-function Room({ isFree }: RoomProps) {
+export function Room({ isFree }: RoomProps) {
   return (
     <div className="room">
       <div>{isFree ? 'Open' : 'Busy'}</div>
@@ -15,5 +15,3 @@ function Room({ isFree }: RoomProps) {
     </div>
   );
 }
-
-export default Room;
