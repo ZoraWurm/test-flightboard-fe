@@ -1,4 +1,4 @@
-.Header {
+.header {
   background-color: rgb(46, 46, 46);
   display: flex;
   justify-content: space-around;
@@ -9,7 +9,12 @@
   border-color: dimgray;
 }
 
-.Subheader {
+.flightboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.locations {
   color: floralwhite;
   background-color: rgb(46, 46, 46);
   display: flex;

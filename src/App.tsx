@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {roomList.map((room) => (
         <Room key={room.id} isFree={room.isFree} />
       ))}
