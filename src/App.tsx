@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Room } from './room/room.component';
+import { Header } from './header/header.component';
 
 export function App() {
   const roomList: any[] = [

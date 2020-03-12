@@ -18,7 +18,7 @@
   color: floralwhite;
   background-color: rgb(46, 46, 46);
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   font-size: 12pt;
   padding: 1%;
   padding-left: 13%;

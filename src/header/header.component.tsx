@@ -2,7 +2,7 @@ import React from 'react';
 import './header.style.css';
 import Clock from '../clock/clock.component';
 
-function Header() {
+export function Header() {
   return (
     <div className="header">
       <div className="flightboard">
@@ -15,5 +15,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;
