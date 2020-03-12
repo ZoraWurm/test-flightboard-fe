@@ -1,10 +1,14 @@
 import React from "react";
+import './Header.css';
 
 function Header() {
     return(
-      <li><h1>
+      <div className="Header">      
+        <h1>
         Flightboard
-        </h1></li>
+        </h1>
+      </div>
+
     );
 }
 

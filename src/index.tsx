@@ -3,13 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Header from './Header';
 
-const routing = (
-        <div>
-            <Header />
-        </div>
-  );
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
