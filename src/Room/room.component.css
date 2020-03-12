@@ -1,0 +1,8 @@
+.room {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkgray;
+  tr:nth-child(odd) {
+    backgroundcolour: lightgrey;
+  }
+}
