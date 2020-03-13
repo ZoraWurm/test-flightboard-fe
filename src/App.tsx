@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Dropdown } from './dropdown/dropdown.component';
 import { Room } from './room/room.component';
 import { Header } from './header/header.component';
 import { RoomEntry } from './room/room.model';
@@ -16,6 +17,7 @@ export function App() {
   return (
     <div className="App">
       <Header />
+      <Dropdown />
       <div className="roomColor">
         {roomList.map((room) => (
           <Room

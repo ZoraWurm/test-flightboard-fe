@@ -1,28 +1,30 @@
 .styleOpen {
-  color: darkgreen;
+  color: rgb(123, 255, 0);
 }
 .styleBusy {
-  color: darkred;
+  color: rgb(216, 21, 21);
 }
 
 .room {
   display: flex;
   justify-content: space-evenly;
-  background-color: darkgray;
+  background-color: rgb(99, 99, 99);
   padding: 2%;
   border: 1px solid;
   border-color: black;
   margin: 2px;
   border-left: 6px solid;
+  color: white;
+  font-size: 15pt;
 }
 .room div {
   width: 20%;
 }
 
 .roomIsOpen {
-  border-left-color: darkgreen;
+  border-left-color: rgb(123, 255, 0);
 }
 
 .roomIsBusy {
-  border-left-color: darkred;
+  border-left-color: rgb(216, 21, 21);
 }
