@@ -1,5 +1,29 @@
-.room {
+.styleOpen {
+  color: darkgreen;
+}
+.styleBusy {
+  color: darkred;
+}
+.roomIsOpen {
   display: flex;
   justify-content: space-evenly;
   background-color: darkgray;
+  padding: 2%;
+  border: 1px solid;
+  border-color: black;
+  margin: 2pt;
+  border-left: 6px solid;
+  border-left-color: darkgreen;
+}
+
+.roomIsBusy {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkgray;
+  padding: 2%;
+  border: 1px solid;
+  border-color: black;
+  margin: 2pt;
+  border-left: 6px solid;
+  border-left-color: darkred;
 }
