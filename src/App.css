@@ -7,6 +7,6 @@
   flex-direction: column;
 }
 
-.roomColor:nth-child(even) {
+.roomColor .room:nth-child(2n + 1) {
   background-color: rgb(65, 65, 65);
 }
