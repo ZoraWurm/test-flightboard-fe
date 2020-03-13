@@ -1,4 +1,12 @@
 .App {
   text-align: center;
   background-color: rgb(37, 37, 37);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.roomColor .room:nth-child(2n + 1) {
+  background-color: rgb(65, 65, 65);
 }

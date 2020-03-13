@@ -1,15 +1,14 @@
 import React from 'react';
 import './room.component.css';
+import { RoomEntry } from './room.model';
 
-type RoomProps = {
-  isFree: boolean;
-};
-
-export function Room({ isFree }: RoomProps) {
+export function Room({ roomName, isFree }: RoomEntry) {
   return (
-    <div className="room">
-      <div>{isFree ? 'Open' : 'Busy'}</div>
-      <div>Raumnummer</div>
+    <div className={isFree === true ? 'room roomIsOpen' : 'room roomIsBusy'}>
+      <div className={isFree === true ? 'styleOpen' : 'styleBusy'}>
+        {isFree ? 'Open' : 'Busy'}
+      </div>
+      <div>{roomName}</div>
       <div>Uhrzeit</div>
       <div>Titel/Name</div>
     </div>
