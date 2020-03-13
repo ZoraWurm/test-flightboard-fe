@@ -15,6 +15,9 @@
   margin: 2px;
   border-left: 6px solid;
 }
+.room div {
+  width: 20%;
+}
 
 .roomIsOpen {
   border-left-color: darkgreen;
