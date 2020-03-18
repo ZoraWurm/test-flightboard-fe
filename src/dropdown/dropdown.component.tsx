@@ -7,7 +7,7 @@ type LocationState = {
 export class Dropdown extends React.Component<{}, LocationState> {
   constructor(props: any) {
     super(props);
-    this.state = { value: 'TH13' };
+    this.state = { value: 'DEFAULT' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,8 +27,10 @@ export class Dropdown extends React.Component<{}, LocationState> {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Pick your Location:
           <select value={this.state.value} onChange={this.handleChange}>
+            <option value="DEFAULT" selected disabled hidden>
+              Location
+            </option>
             <option value="TH13">TH13</option>
             <option value="OVAL">OVAL</option>
             <option value="MOIN">MOIN</option>
