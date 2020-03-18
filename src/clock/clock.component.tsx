@@ -4,7 +4,7 @@ type ClockState = {
   time: Date;
 };
 
-class Clock extends React.Component<{}, ClockState> {
+export class Clock extends React.Component<{}, ClockState> {
   constructor(props: any) {
     super(props);
     this.state = { time: new Date() };
@@ -24,5 +24,3 @@ class Clock extends React.Component<{}, ClockState> {
     return <span>{this.state.time.toLocaleTimeString()}</span>;
   }
 }
-
-export default Clock;

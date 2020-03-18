@@ -1,4 +1,5 @@
 import React from 'react';
+import './dropdown.style.css';
 
 type LocationState = {
   value: string;
@@ -26,7 +27,7 @@ export class Dropdown extends React.Component<{}, LocationState> {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <div>
           <select value={this.state.value} onChange={this.handleChange}>
             <option value="DEFAULT" selected disabled hidden>
               Location
@@ -35,7 +36,7 @@ export class Dropdown extends React.Component<{}, LocationState> {
             <option value="OVAL">OVAL</option>
             <option value="MOIN">MOIN</option>
           </select>
-        </label>
+        </div>
       </form>
     );
   }

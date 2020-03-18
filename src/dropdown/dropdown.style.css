@@ -1,0 +1,18 @@
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  height: 40px;
+  padding-left: 15px;
+  margin-left: 13%;
+  background: rgb(46, 46, 46);
+  color: #fff;
+  font-size: 15pt;
+  font-family: 'Titillium Web', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
