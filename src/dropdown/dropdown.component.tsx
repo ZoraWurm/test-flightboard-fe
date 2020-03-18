@@ -1,25 +1,25 @@
 import React from 'react';
 
 type LocationState = {
-  location: string;
+  value: string;
 };
 
 export class Dropdown extends React.Component<{}, LocationState> {
   constructor(props: any) {
     super(props);
-    this.state = { location: 'TH13' };
+    this.state = { value: 'TH13' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event: any) {
-    this.setState({ location: event.target.location });
+    this.setState({ value: event.target.value });
+    this.handleSubmit(event);
   }
 
   handleSubmit(event: any) {
-    // alert('Your favorite flavor is: ' + this.state.location);
-    // TODO - Display Rooms
+    alert('Your Location is: ' + event.target.value);
     event.preventDefault();
   }
 
@@ -28,13 +28,12 @@ export class Dropdown extends React.Component<{}, LocationState> {
       <form onSubmit={this.handleSubmit}>
         <label>
           Pick your Location:
-          <select location={this.state.location} onChange={this.handleChange}>
-            <option location="TH13">TH13</option>
-            <option location="OVAL">OVAL</option>
-            <option location="MOIN">MOIN</option>
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value="TH13">TH13</option>
+            <option value="OVAL">OVAL</option>
+            <option value="MOIN">MOIN</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
       </form>
     );
   }
