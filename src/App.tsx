@@ -9,9 +9,10 @@ export function App() {
   const roomList: RoomEntry[] = [
     { id: 1, roomName: 'Grace Hopper', isFree: true, location: 'TH13' },
     { id: 2, roomName: 'Ada Lovelance', isFree: true, location: 'TH13' },
-    { id: 3, roomName: 'Kreativlab', isFree: false, location: 'TH13' },
-    { id: 4, roomName: 'Sofazimmer', isFree: true, location: 'TH13' },
-    { id: 5, roomName: 'Prinzessinenzimmer', isFree: true, location: 'TH13' },
+    { id: 3, roomName: 'Kreativlab', isFree: false, location: 'OVAL' },
+    { id: 4, roomName: 'Sofazimmer', isFree: true, location: 'MOIN' },
+    { id: 5, roomName: 'Prinzessinenzimmer', isFree: false, location: 'MOIN' },
+    { id: 4, roomName: 'Fernsehzimmer', isFree: true, location: 'TH13' },
   ];
 
   return (

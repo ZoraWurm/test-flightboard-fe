@@ -20,7 +20,7 @@ export class Dropdown extends React.Component<{}, LocationState> {
   }
 
   handleSubmit(event: any) {
-    alert('Your Location is: ' + event.target.value);
+    console.log('The current Location is: ' + event.target.value);
     event.preventDefault();
   }
 

@@ -6,7 +6,9 @@ import { Dropdown } from '../dropdown/dropdown.component';
 export function Header() {
   return (
     <div className="header">
-      <div className="flightboard">Flightboard</div>
+      <div className="flightboard">
+        Flightboard <Dropdown />
+      </div>
       <div>
         <Clock />
       </div>
